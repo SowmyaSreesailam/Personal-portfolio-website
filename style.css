@@ -393,7 +393,16 @@ nav ul li a:hover::after {
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
-    font-size: large;
+    font-size: medium;
+    margin: 10px;
+}
+
+@media (max-width: 576px) {
+    .layer h3 {
+        font-size: small;
+        margin-top: 10px;
+        
+    }
 }
 
 .layer a {
@@ -409,6 +418,15 @@ nav ul li a:hover::after {
     text-align: center;
 }
 
+
+@media (max-width: 576px) {
+    .layer a {
+        font-size: 10px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+          }
+}
 .project:hover .layer {
     height: 95%;
 }
